@@ -8,8 +8,8 @@ The project aims to design, build and test an **IoT** platform that can be used 
 
 On successful completion of the project, an end-to-end **IoT** application using the **Sigfox** network has been implemented; and the total cost of the developed **IoT** solution is around ***$70***, which is ***14%*** of the price of a similar commercial **Sigfox** **IoT** product. Two field units to monitor soil moisture in the garden and a landfill remediation field respectively have been constructed and deployed. The next step is to a design and manufacture a PCB with an **Arduino**-compatible microchip, a **Sigfox** module, an effcient voltage regular and other modules that together make it a low-power board.
 
-# Used libraries
-
-* [SDISerial](https://github.com/joranbeasley/SDISerial)
+## Used libraries
 
 * [Thinxtra/Xkit-Sample](https://github.com/Thinxtra/Xkit-Sample)
+
+* [SDISerial](https://github.com/joranbeasley/SDISerial)
