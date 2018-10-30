@@ -8,7 +8,18 @@ The project aims to design, build and test an **IoT** platform that can be used 
 
 On successful completion of the project, an end-to-end **IoT** application using the **Sigfox** network has been implemented; and the total cost of the developed **IoT** solution is around ***$70***, which is ***14%*** of the price of a similar commercial **Sigfox** **IoT** product. Two field units to monitor soil moisture in the garden and a landfill remediation field respectively have been constructed and deployed. The next step is to a design and manufacture a PCB with an **Arduino**-compatible microchip, a **Sigfox** module, an effcient voltage regular and other modules that together make it a low-power board.
 
-## Used libraries
+## Three IoT Applications
+
+# [Water level and height monitoring](xkit-2bebc3.mybluemix.net/ui)
+
+# [Monitoring volumetric percentage of moisture in the soil of the garden](xkit-3e5ac8.mybluemix.net/ui)
+![layout](https://github.com/aprilxindong12/sigfox-iot/blob/master/docs/garden_layout.png)
+![layout_power](https://github.com/aprilxindong12/sigfox-iot/blob/master/docs/garden_power_layout.png)
+
+# [Monitoring soil moisture level in landfill remediation fields](xkit-2c5ca8.mybluemix.net/ui)
+![layout2](https://github.com/aprilxindong12/sigfox-iot/blob/master/docs/soil_layout.png)
+
+# Libraries
 
 * [Thinxtra/Xkit-Sample](https://github.com/Thinxtra/Xkit-Sample)
 
