@@ -1,6 +1,6 @@
 # sigfox-iot
 
-## [Building an IoT platform for remote monitoring of field applications using Sigfox LPWAN](https://github.com/aprilxindong12/sigfox-iot/blob/master/poster_A0.pdf)
+## [Building an IoT platform for remote monitoring of field applications using Sigfox LPWAN](https://github.com/aprilxindong12/sigfox-iot/blob/master/docs/poster_A0.pdf)
 
 **Field applications at remote locations** are often diffcult to monitor and maintain. Frequent site visits incur high labour costs and unawareness of the accurate condition of the sites can lead to incomprehensive managing decisions. To address these problems, an **IoT** system can be developed and installed in the field to achieve **remote monitoring** of the field applications.
 
