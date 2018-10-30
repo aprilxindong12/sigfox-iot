@@ -1,0 +1,1308 @@
+{
+  "_id": "Xkit-2C5CA8/flow",
+  "_rev": "267-1d7531b17530829c3171187033870cb8",
+  "flow": [
+    {
+      "id": "ccde1cb0.a69fe",
+      "type": "tab",
+      "label": "Flow 1",
+      "disabled": false,
+      "info": ""
+    },
+    {
+      "id": "8d41325d.cfe5d",
+      "type": "tab",
+      "label": "Current Data",
+      "disabled": false,
+      "info": ""
+    },
+    {
+      "id": "32d0f8de.632a18",
+      "type": "tab",
+      "label": "Historical Data",
+      "disabled": false,
+      "info": ""
+    },
+    {
+      "id": "b9567201.46fcc",
+      "type": "ibmiot",
+      "z": "",
+      "name": "SigFox Access Key",
+      "keepalive": "60",
+      "serverName": "nbe99g.messaging.internetofthings.ibmcloud.com",
+      "cleansession": false,
+      "appId": "",
+      "shared": false
+    },
+    {
+      "id": "a30ea87f.a43a28",
+      "type": "ui_base",
+      "z": "ccde1cb0.a69fe",
+      "theme": {
+        "name": "theme-light",
+        "lightTheme": {
+          "default": "#0094CE",
+          "baseColor": "#0094CE",
+          "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+          "edited": true,
+          "reset": false
+        },
+        "darkTheme": {
+          "default": "#097479",
+          "baseColor": "#097479",
+          "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+          "edited": true,
+          "reset": false
+        },
+        "customTheme": {
+          "name": "Untitled Theme 1",
+          "default": "#4B7930",
+          "baseColor": "#4B7930",
+          "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+        },
+        "themeState": {
+          "base-color": {
+            "default": "#0094CE",
+            "value": "#0094CE",
+            "edited": false
+          },
+          "page-titlebar-backgroundColor": {
+            "value": "#0094CE",
+            "edited": false
+          },
+          "page-backgroundColor": {
+            "value": "#fafafa",
+            "edited": false
+          },
+          "page-sidebar-backgroundColor": {
+            "value": "#ffffff",
+            "edited": false
+          },
+          "group-textColor": {
+            "value": "#1bbfff",
+            "edited": false
+          },
+          "group-borderColor": {
+            "value": "#ffffff",
+            "edited": false
+          },
+          "group-backgroundColor": {
+            "value": "#ffffff",
+            "edited": false
+          },
+          "widget-textColor": {
+            "value": "#111111",
+            "edited": false
+          },
+          "widget-backgroundColor": {
+            "value": "#0094ce",
+            "edited": false
+          },
+          "widget-borderColor": {
+            "value": "#ffffff",
+            "edited": false
+          },
+          "base-font": {
+            "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+          }
+        }
+      },
+      "site": {
+        "name": "Node-RED Dashboard",
+        "hideToolbar": "false",
+        "allowSwipe": "false",
+        "allowTempTheme": "true",
+        "dateFormat": "DD/MM/YYYY",
+        "sizes": {
+          "sx": 48,
+          "sy": 48,
+          "gx": 6,
+          "gy": 6,
+          "cx": 6,
+          "cy": 6,
+          "px": 0,
+          "py": 0
+        }
+      }
+    },
+    {
+      "id": "f97484b3.adc168",
+      "type": "ui_tab",
+      "z": "",
+      "name": "Real-Time Data",
+      "icon": "dashboard"
+    },
+    {
+      "id": "8d2b20ec.f570a",
+      "type": "ui_group",
+      "z": "",
+      "name": "Notification",
+      "tab": "f97484b3.adc168",
+      "order": 1,
+      "disp": true,
+      "width": "6",
+      "collapse": true
+    },
+    {
+      "id": "dd5f9908.8a7ab8",
+      "type": "ui_tab",
+      "z": "",
+      "name": "Historical Data",
+      "icon": "dashboard"
+    },
+    {
+      "id": "14eb7ea0.161a51",
+      "type": "ui_group",
+      "z": "",
+      "name": "Soil Moisture Data",
+      "tab": "dd5f9908.8a7ab8",
+      "disp": true,
+      "width": "22",
+      "collapse": true
+    },
+    {
+      "id": "82d200ad.84a8b",
+      "type": "ui_group",
+      "z": "",
+      "name": "Temperature Data",
+      "tab": "dd5f9908.8a7ab8",
+      "disp": true,
+      "width": "22",
+      "collapse": true
+    },
+    {
+      "id": "83517f71.99097",
+      "type": "ui_group",
+      "z": "",
+      "name": "Soil Moisture Data",
+      "tab": "f97484b3.adc168",
+      "order": 2,
+      "disp": true,
+      "width": "6",
+      "collapse": true
+    },
+    {
+      "id": "85523dc2.1abb2",
+      "type": "ui_group",
+      "z": "",
+      "name": "Temperature Data",
+      "tab": "f97484b3.adc168",
+      "order": 3,
+      "disp": true,
+      "width": "6",
+      "collapse": true
+    },
+    {
+      "id": "9abaebed.a0f0d8",
+      "type": "ibmiot in",
+      "z": "8d41325d.cfe5d",
+      "authentication": "apiKey",
+      "apiKey": "b9567201.46fcc",
+      "inputType": "evt",
+      "logicalInterface": "",
+      "ruleId": "",
+      "deviceId": "2C5CA8",
+      "applicationId": "",
+      "deviceType": "+",
+      "eventType": "+",
+      "commandType": "",
+      "format": "json",
+      "name": "IBM IoT",
+      "service": "registered",
+      "allDevices": "",
+      "allApplications": "",
+      "allDeviceTypes": true,
+      "allLogicalInterfaces": "",
+      "allEvents": true,
+      "allCommands": "",
+      "allFormats": "",
+      "qos": 0,
+      "x": 130,
+      "y": 220,
+      "wires": [
+        [
+          "b2378aee.e34a38"
+        ]
+      ]
+    },
+    {
+      "id": "82c783e7.b8e04",
+      "type": "function",
+      "z": "8d41325d.cfe5d",
+      "name": "Payload_parsing",
+      "func": "var Data = msg.payload.data;\nvar Dlength = Data.length;\nmsg.payload.otherData.Length = Dlength;\nvar type = Number('0x0'+Data.slice(Dlength-1));\nmsg.payload.otherData.Type = type;\nvar T = msg.payload.time*1000;\nmsg.payload.otherData.Timestamp = T;\n\nvar signs = Number('0x'+Data.slice(Dlength-2,Dlength-1)+'0');\n\nif((type==1 && Dlength==16) || (type==3 && Dlength==14) ||type==4)\n{\n    if(type==4)\n        msg.payload.otherData.Interval = Number('0x'+Data.slice(0,2));\n    else\n    {\n        if(type==1)\n            msg.payload.otherData.Interval = Number('0x'+Data.slice(12,14));\n        \n        var temperatures = [];\n        var shiftThis = 16;\n        \n        temperatures[0]=Number('0x'+Data.slice(0,2)) + ((Number('0x'+Data.slice(2,4)) & 0xF0)<<4);\n        temperatures[1]=(Number('0x'+Data.slice(2,4)) & 0x0F) + (Number('0x'+Data.slice(4,6))<<4);\n        temperatures[2]=Number('0x'+Data.slice(6,8)) + ((Number('0x'+Data.slice(8,10)) & 0xF0)<<4);\n        temperatures[3]=(Number('0x'+Data.slice(8,10)) & 0x0F) + (Number('0x'+Data.slice(10,12))<<4);\n        \n        for(i=0;i<4;i++){\n            if(signs & (shiftThis<<i))\n                temperatures[i] = (15+temperatures[i]/100).toFixed(1); \n            else\n                temperatures[i] = (15-temperatures[i]/100).toFixed(1);\n        \n            if(temperatures[i]<0){\n                msg.payload.otherData.Type = 0;\n                break;\n            }\n        }    \n        \n        msg.payload.otherData.Temperatures = temperatures;\n    }    \n}\nelse if(type==2 && Dlength==18)\n{\n    var moistures = [];\n    var shiftThis = 16;\n    \n    for(i=0;i<4;i++){\n        if(signs & (shiftThis<<i))\n            moistures[i] = (55+Number('0x'+Data.slice(i*4,i*4+4))/1000).toFixed(2); \n        else\n            moistures[i] = (55-Number('0x'+Data.slice(i*4,i*4+4))/1000).toFixed(2);\n    }    \n\n    msg.payload.otherData.Moistures = moistures;\n}\nelse\n    msg.payload.otherData.Type = 0;\n    \nmsg.payload.otherData.datadecoded = '1';\nreturn msg;\n",
+      "outputs": 1,
+      "noerr": 0,
+      "x": 430,
+      "y": 220,
+      "wires": [
+        [
+          "5c9106a4.34bdd8",
+          "a3729a8.a542e68",
+          "f72d52e5.d6bfa"
+        ]
+      ]
+    },
+    {
+      "id": "5c9106a4.34bdd8",
+      "type": "ibmiot out",
+      "z": "8d41325d.cfe5d",
+      "authentication": "apiKey",
+      "apiKey": "b9567201.46fcc",
+      "outputType": "evt",
+      "deviceId": "2C5CA8",
+      "deviceType": "0.18.4",
+      "eventCommandType": "datadecoded",
+      "format": "json",
+      "data": "msg.payload",
+      "qos": 0,
+      "name": "IBM IoT",
+      "service": "registered",
+      "x": 640,
+      "y": 180,
+      "wires": []
+    },
+    {
+      "id": "b2378aee.e34a38",
+      "type": "switch",
+      "z": "8d41325d.cfe5d",
+      "name": "Switch",
+      "property": "payload.otherData.datadecoded",
+      "propertyType": "msg",
+      "rules": [
+        {
+          "t": "eq",
+          "v": "0",
+          "vt": "str"
+        }
+      ],
+      "checkall": "true",
+      "repair": false,
+      "outputs": 1,
+      "x": 260,
+      "y": 220,
+      "wires": [
+        [
+          "82c783e7.b8e04"
+        ]
+      ]
+    },
+    {
+      "id": "a3729a8.a542e68",
+      "type": "debug",
+      "z": "8d41325d.cfe5d",
+      "name": "msg",
+      "active": true,
+      "tosidebar": true,
+      "console": false,
+      "tostatus": false,
+      "complete": "true",
+      "x": 630,
+      "y": 220,
+      "wires": []
+    },
+    {
+      "id": "b2cff508.f64ed8",
+      "type": "function",
+      "z": "8d41325d.cfe5d",
+      "name": "Temperature Data",
+      "func": "return {\n    payload: {\n        data: msg.payload.otherData\n    }\n};",
+      "outputs": 1,
+      "noerr": 0,
+      "x": 430,
+      "y": 320,
+      "wires": [
+        [
+          "b76d419e.d0b72"
+        ]
+      ]
+    },
+    {
+      "id": "b76d419e.d0b72",
+      "type": "cloudant out",
+      "z": "8d41325d.cfe5d",
+      "name": "",
+      "cloudant": "",
+      "database": "temperaturedata",
+      "service": "Xkit-2C5CA8-cloudantNoSQLDB",
+      "payonly": true,
+      "operation": "insert",
+      "x": 640,
+      "y": 320,
+      "wires": []
+    },
+    {
+      "id": "f72d52e5.d6bfa",
+      "type": "link out",
+      "z": "8d41325d.cfe5d",
+      "name": "",
+      "links": [
+        "1ef30eac.de6431",
+        "5b308f05.7559c"
+      ],
+      "x": 595,
+      "y": 260,
+      "wires": []
+    },
+    {
+      "id": "5b308f05.7559c",
+      "type": "link in",
+      "z": "8d41325d.cfe5d",
+      "name": "",
+      "links": [
+        "f72d52e5.d6bfa"
+      ],
+      "x": 85,
+      "y": 500,
+      "wires": [
+        [
+          "fa32756c.f083e8"
+        ]
+      ]
+    },
+    {
+      "id": "fa32756c.f083e8",
+      "type": "switch",
+      "z": "8d41325d.cfe5d",
+      "name": "Switch",
+      "property": "payload.otherData.Type",
+      "propertyType": "msg",
+      "rules": [
+        {
+          "t": "eq",
+          "v": "3",
+          "vt": "num"
+        },
+        {
+          "t": "eq",
+          "v": "1",
+          "vt": "num"
+        },
+        {
+          "t": "eq",
+          "v": "2",
+          "vt": "num"
+        }
+      ],
+      "checkall": "true",
+      "repair": false,
+      "outputs": 3,
+      "x": 180,
+      "y": 500,
+      "wires": [
+        [
+          "b2cff508.f64ed8",
+          "677a362e.cdf358",
+          "53be4acc.681874",
+          "cc9c4239.d5c9d",
+          "4f6d6c27.081a64",
+          "7dbcb81d.450298"
+        ],
+        [
+          "b2cff508.f64ed8",
+          "677a362e.cdf358",
+          "53be4acc.681874",
+          "cc9c4239.d5c9d",
+          "4f6d6c27.081a64",
+          "7dbcb81d.450298",
+          "a380bc59.4e89c"
+        ],
+        [
+          "e447c307.5d3da",
+          "c89a7094.d57bc",
+          "c967aa6c.d7f658",
+          "e23dd1b4.5fc04",
+          "82219f2a.1849b",
+          "b11676f7.604af8"
+        ]
+      ]
+    },
+    {
+      "id": "396146f.bbd05ba",
+      "type": "cloudant in",
+      "z": "32d0f8de.632a18",
+      "name": "soilmosituredata",
+      "cloudant": "",
+      "database": "soilmoisturedata",
+      "service": "Xkit-2C5CA8-cloudantNoSQLDB",
+      "search": "_all_",
+      "design": "",
+      "index": "",
+      "x": 280,
+      "y": 220,
+      "wires": [
+        [
+          "cbd12862.063708"
+        ]
+      ]
+    },
+    {
+      "id": "cbd12862.063708",
+      "type": "function",
+      "z": "32d0f8de.632a18",
+      "name": "Chart Array for Soil Moisture Data",
+      "func": "// This function reformats the timeseries data into an array that \n// Chart.js (See http://www.chartjs.org/ ) will plot\n// The node-red-dashboard Chart node uses Chart.js \n\nfunction returnTime(value){\n    var now     = new Date(value+36000000); \n    var year    = now.getFullYear();\n    var month   = now.getMonth()+1; \n    var day     = now.getDate();\n    var hour    = now.getHours();\n    var minute  = now.getMinutes();\n    var second  = now.getSeconds(); \n    if(month.toString().length == 1) {\n        month = '0'+month;\n    }\n    if(day.toString().length == 1) {\n        day = '0'+day;\n    }   \n    if(hour.toString().length == 1) {\n        hour = '0'+hour;\n    }\n    if(minute.toString().length == 1) {\n        minute = '0'+minute;\n    }\n    if(second.toString().length == 1) {\n        second = '0'+second;\n    }\n    \n    var timestamp = month+'-'+day+' '+hour+':'+minute+':'+second;\n    return timestamp;\n}\n\nvar StartTime = global.get(\"StartTime\")-36000000;\nvar EndTime = global.get(\"EndTime\")+86400000-36000000;\n\n// The Array has this structure, inserting the first element as a template.\nvar ChartData = [ {\"series\":[\"Sensor1\",\"Sensor2\",\"Sensor3\", \"Sensor4\"],\n                   \"data\":[\n                       [{\"x\":msg.payload[0].data.Timestamp,\"y\":msg.payload[0].data.Moistures[0]}],\n                       [{\"x\":msg.payload[0].data.Timestamp,\"y\":msg.payload[0].data.Moistures[1]}],\n                       [{\"x\":msg.payload[0].data.Timestamp,\"y\":msg.payload[0].data.Moistures[2]}],\n                       [{\"x\":msg.payload[0].data.Timestamp,\"y\":msg.payload[0].data.Moistures[3]}],\n                    ],\n                   \"labels\":[\"\"]}];\n\nfor(var i=1; i < msg.payload.length; i++) {\n    var time1 = msg.payload[i].data.Timestamp;\n    if(time1>=StartTime && time1<=EndTime)\n    {\n        for(var j=0; j<4; j++)\n            ChartData[0].data[j].push({\"x\":time1,\"y\":msg.payload[i].data.Moistures[j]});\n    }\n}\n\nvar time0 = msg.payload[0].data.Timestamp;\nif(time0<StartTime || time0>EndTime)\n{\n    for(var j=0; j<4; j++)\n        ChartData[0].data[j].shift();\n}\n\nfor(var k=0;k<4;k++)\n    ChartData[0].data[k].sort(function sortNumber(a,b) { return a.x - b.x; });    \n\nmsg.payload = ChartData;\nreturn msg;\n",
+      "outputs": 1,
+      "noerr": 0,
+      "x": 530,
+      "y": 220,
+      "wires": [
+        [
+          "e6e32a.e7baacd8"
+        ]
+      ]
+    },
+    {
+      "id": "ff6949c8.c746f8",
+      "type": "cloudant in",
+      "z": "32d0f8de.632a18",
+      "name": "temperaturedata",
+      "cloudant": "",
+      "database": "temperaturedata",
+      "service": "Xkit-2C5CA8-cloudantNoSQLDB",
+      "search": "_all_",
+      "design": "",
+      "index": "",
+      "x": 280,
+      "y": 260,
+      "wires": [
+        [
+          "b0fb1361.e9a0b"
+        ]
+      ]
+    },
+    {
+      "id": "b0fb1361.e9a0b",
+      "type": "function",
+      "z": "32d0f8de.632a18",
+      "name": "Chart Array for Temperature Data",
+      "func": "var StartTime = global.get(\"StartTime\")-36000000;\nvar EndTime = global.get(\"EndTime\")+86400000-36000000;\n\n// The Array has this structure, inserting the first element as a template.\nvar ChartData = [ {\"series\":[\"Sensor1\",\"Sensor2\",\"Sensor3\", \"Sensor4\"],\n                   \"data\":[\n                       [{\"x\":msg.payload[0].data.Timestamp,\"y\":msg.payload[0].data.Temperatures[0]}],\n                       [{\"x\":msg.payload[0].data.Timestamp,\"y\":msg.payload[0].data.Temperatures[1]}],\n                       [{\"x\":msg.payload[0].data.Timestamp,\"y\":msg.payload[0].data.Temperatures[2]}],\n                       [{\"x\":msg.payload[0].data.Timestamp,\"y\":msg.payload[0].data.Temperatures[3]}],\n                    ],\n                   \"labels\":[\"\"]}];\n\nfor(var i=1; i < msg.payload.length; i++) {\n    var time1 = msg.payload[i].data.Timestamp;\n    if(time1>=StartTime && time1<=EndTime)\n    {\n        for(var j=0; j<4; j++)\n            ChartData[0].data[j].push({\"x\":time1,\"y\":msg.payload[i].data.Temperatures[j]});\n    }\n}\n\nvar time0 = msg.payload[0].data.Timestamp;\nif(time0<StartTime || time0>EndTime)\n{\n    for(var j=0; j<4; j++)\n        ChartData[0].data[j].shift();\n}\n\nfor(var k=0;k<4;k++)\n    ChartData[0].data[k].sort(function sortNumber(a,b) { return a.x - b.x; });    \n\nmsg.payload = ChartData;\nreturn msg;\n",
+      "outputs": 1,
+      "noerr": 0,
+      "x": 530,
+      "y": 260,
+      "wires": [
+        [
+          "e170928b.f5409"
+        ]
+      ]
+    },
+    {
+      "id": "1df486ef.ee5809",
+      "type": "ui_button",
+      "z": "32d0f8de.632a18",
+      "name": "",
+      "group": "14eb7ea0.161a51",
+      "order": 4,
+      "width": "2",
+      "height": "1",
+      "passthru": false,
+      "label": "Display",
+      "color": "",
+      "bgcolor": "",
+      "icon": "",
+      "payload": "",
+      "payloadType": "str",
+      "topic": "",
+      "x": 100,
+      "y": 260,
+      "wires": [
+        [
+          "ff6949c8.c746f8",
+          "396146f.bbd05ba"
+        ]
+      ]
+    },
+    {
+      "id": "b46200c6.6f6fd",
+      "type": "ui_button",
+      "z": "32d0f8de.632a18",
+      "name": "",
+      "group": "14eb7ea0.161a51",
+      "order": 5,
+      "width": "2",
+      "height": "1",
+      "passthru": false,
+      "label": "Clear",
+      "color": "",
+      "bgcolor": "",
+      "icon": "",
+      "payload": "[]",
+      "payloadType": "json",
+      "topic": "",
+      "x": 600,
+      "y": 300,
+      "wires": [
+        [
+          "e6e32a.e7baacd8",
+          "e170928b.f5409"
+        ]
+      ]
+    },
+    {
+      "id": "e6e32a.e7baacd8",
+      "type": "ui_chart",
+      "z": "32d0f8de.632a18",
+      "name": "Soil Moisture Chart",
+      "group": "14eb7ea0.161a51",
+      "order": 1,
+      "width": "0",
+      "height": "0",
+      "label": "Soil Moisture (SFU)",
+      "chartType": "line",
+      "legend": "true",
+      "xformat": "MM-DD HH:mm",
+      "interpolate": "linear",
+      "nodata": "Select DATEs and then click DISPLAY button to display historical data.",
+      "dot": true,
+      "ymin": "",
+      "ymax": "",
+      "removeOlder": "1",
+      "removeOlderPoints": "",
+      "removeOlderUnit": "604800",
+      "cutout": 0,
+      "useOneColor": false,
+      "colors": [
+        "#1f77b4",
+        "#aec7e8",
+        "#ff7f0e",
+        "#2ca02c",
+        "#98df8a",
+        "#d62728",
+        "#ff9896",
+        "#9467bd",
+        "#c5b0d5"
+      ],
+      "useOldStyle": false,
+      "x": 820,
+      "y": 220,
+      "wires": [
+        [],
+        []
+      ]
+    },
+    {
+      "id": "e170928b.f5409",
+      "type": "ui_chart",
+      "z": "32d0f8de.632a18",
+      "name": "Tempature Chart",
+      "group": "82d200ad.84a8b",
+      "order": 1,
+      "width": 0,
+      "height": 0,
+      "label": "Temperature (C)",
+      "chartType": "line",
+      "legend": "true",
+      "xformat": "MM-DD HH:mm",
+      "interpolate": "linear",
+      "nodata": "Select DATEs and then click DISPLAY button to display historical data.",
+      "dot": true,
+      "ymin": "",
+      "ymax": "",
+      "removeOlder": "1",
+      "removeOlderPoints": "",
+      "removeOlderUnit": "604800",
+      "cutout": 0,
+      "useOneColor": false,
+      "colors": [
+        "#1f77b4",
+        "#aec7e8",
+        "#ff7f0e",
+        "#2ca02c",
+        "#98df8a",
+        "#d62728",
+        "#ff9896",
+        "#9467bd",
+        "#c5b0d5"
+      ],
+      "useOldStyle": false,
+      "x": 820,
+      "y": 260,
+      "wires": [
+        [],
+        []
+      ]
+    },
+    {
+      "id": "b11676f7.604af8",
+      "type": "function",
+      "z": "8d41325d.cfe5d",
+      "name": "Soil Mositure Data",
+      "func": "return {\n    payload: {\n        data: msg.payload.otherData\n    }\n};\n\n    ",
+      "outputs": 1,
+      "noerr": 0,
+      "x": 450,
+      "y": 680,
+      "wires": [
+        [
+          "f0684c7b.a0e8b"
+        ]
+      ]
+    },
+    {
+      "id": "f0684c7b.a0e8b",
+      "type": "cloudant out",
+      "z": "8d41325d.cfe5d",
+      "name": "",
+      "cloudant": "",
+      "database": "soilmoisturedata",
+      "service": "Xkit-2C5CA8-cloudantNoSQLDB",
+      "payonly": true,
+      "operation": "insert",
+      "x": 660,
+      "y": 680,
+      "wires": []
+    },
+    {
+      "id": "c0c854aa.473388",
+      "type": "ui_gauge",
+      "z": "8d41325d.cfe5d",
+      "name": "Soil1",
+      "group": "83517f71.99097",
+      "order": 0,
+      "width": 0,
+      "height": 0,
+      "gtype": "gage",
+      "title": "Sensor 1",
+      "label": "SFU",
+      "format": "{{value}}",
+      "min": "-5",
+      "max": "120",
+      "colors": [
+        "#ca3737",
+        "#00b500",
+        "#e6e600"
+      ],
+      "seg1": "0",
+      "seg2": "100",
+      "x": 610,
+      "y": 520,
+      "wires": []
+    },
+    {
+      "id": "c89a7094.d57bc",
+      "type": "function",
+      "z": "8d41325d.cfe5d",
+      "name": "Soil1",
+      "func": "msg.payload = msg.payload.otherData.Moistures[0];\nreturn msg;",
+      "outputs": 1,
+      "noerr": 0,
+      "x": 409.99999046325684,
+      "y": 521.0000143051147,
+      "wires": [
+        [
+          "c0c854aa.473388"
+        ]
+      ]
+    },
+    {
+      "id": "c967aa6c.d7f658",
+      "type": "function",
+      "z": "8d41325d.cfe5d",
+      "name": "Soil2",
+      "func": "msg.payload = msg.payload.otherData.Moistures[1];\nreturn msg;",
+      "outputs": 1,
+      "noerr": 0,
+      "x": 410,
+      "y": 560,
+      "wires": [
+        [
+          "b8dabb88.760248"
+        ]
+      ]
+    },
+    {
+      "id": "e23dd1b4.5fc04",
+      "type": "function",
+      "z": "8d41325d.cfe5d",
+      "name": "Soil3",
+      "func": "msg.payload = msg.payload.otherData.Moistures[2];\nreturn msg;",
+      "outputs": 1,
+      "noerr": 0,
+      "x": 410,
+      "y": 600,
+      "wires": [
+        [
+          "7338beff.82d45"
+        ]
+      ]
+    },
+    {
+      "id": "82219f2a.1849b",
+      "type": "function",
+      "z": "8d41325d.cfe5d",
+      "name": "Soil4",
+      "func": "msg.payload = msg.payload.otherData.Moistures[3];\nreturn msg;",
+      "outputs": 1,
+      "noerr": 0,
+      "x": 410,
+      "y": 640,
+      "wires": [
+        [
+          "57d28f30.5ca76"
+        ]
+      ]
+    },
+    {
+      "id": "4407bf65.fb14f",
+      "type": "ui_gauge",
+      "z": "8d41325d.cfe5d",
+      "name": "Temp1",
+      "group": "85523dc2.1abb2",
+      "order": 0,
+      "width": 0,
+      "height": 0,
+      "gtype": "gage",
+      "title": "Sensor 1",
+      "label": "C",
+      "format": "{{value}}",
+      "min": "-20",
+      "max": "50",
+      "colors": [
+        "#ffffff",
+        "#ffff80",
+        "#ff0000"
+      ],
+      "seg1": "0",
+      "seg2": "40",
+      "x": 610,
+      "y": 360,
+      "wires": []
+    },
+    {
+      "id": "677a362e.cdf358",
+      "type": "function",
+      "z": "8d41325d.cfe5d",
+      "name": "Temp1",
+      "func": "msg.payload = msg.payload.otherData.Temperatures[0];\nreturn msg;",
+      "outputs": 1,
+      "noerr": 0,
+      "x": 413,
+      "y": 359.99994564056396,
+      "wires": [
+        [
+          "4407bf65.fb14f"
+        ]
+      ]
+    },
+    {
+      "id": "53be4acc.681874",
+      "type": "function",
+      "z": "8d41325d.cfe5d",
+      "name": "Temp2",
+      "func": "msg.payload = msg.payload.otherData.Temperatures[1];\nreturn msg;",
+      "outputs": 1,
+      "noerr": 0,
+      "x": 410,
+      "y": 400,
+      "wires": [
+        [
+          "e5e2ecce.91d34"
+        ]
+      ]
+    },
+    {
+      "id": "cc9c4239.d5c9d",
+      "type": "function",
+      "z": "8d41325d.cfe5d",
+      "name": "Temp3",
+      "func": "msg.payload = msg.payload.otherData.Temperatures[2];\nreturn msg;",
+      "outputs": 1,
+      "noerr": 0,
+      "x": 410,
+      "y": 440,
+      "wires": [
+        [
+          "1e1f1c96.85c753"
+        ]
+      ]
+    },
+    {
+      "id": "4f6d6c27.081a64",
+      "type": "function",
+      "z": "8d41325d.cfe5d",
+      "name": "Temp4",
+      "func": "msg.payload = msg.payload.otherData.Temperatures[3];\nreturn msg;",
+      "outputs": 1,
+      "noerr": 0,
+      "x": 410,
+      "y": 480,
+      "wires": [
+        [
+          "da68c3e.b8ec74"
+        ]
+      ]
+    },
+    {
+      "id": "b8dabb88.760248",
+      "type": "ui_gauge",
+      "z": "8d41325d.cfe5d",
+      "name": "Soil2",
+      "group": "83517f71.99097",
+      "order": 0,
+      "width": 0,
+      "height": 0,
+      "gtype": "gage",
+      "title": "Sensor 2",
+      "label": "SFU",
+      "format": "{{value}}",
+      "min": "-5",
+      "max": "120",
+      "colors": [
+        "#ca3737",
+        "#00b500",
+        "#e6e600"
+      ],
+      "seg1": "0",
+      "seg2": "100",
+      "x": 610,
+      "y": 560,
+      "wires": []
+    },
+    {
+      "id": "7338beff.82d45",
+      "type": "ui_gauge",
+      "z": "8d41325d.cfe5d",
+      "name": "Soil3",
+      "group": "83517f71.99097",
+      "order": 0,
+      "width": 0,
+      "height": 0,
+      "gtype": "gage",
+      "title": "Sensor 3",
+      "label": "SFU",
+      "format": "{{value}}",
+      "min": "-5",
+      "max": "120",
+      "colors": [
+        "#ca3737",
+        "#00b500",
+        "#e6e600"
+      ],
+      "seg1": "0",
+      "seg2": "100",
+      "x": 610,
+      "y": 600,
+      "wires": []
+    },
+    {
+      "id": "57d28f30.5ca76",
+      "type": "ui_gauge",
+      "z": "8d41325d.cfe5d",
+      "name": "Soil4",
+      "group": "83517f71.99097",
+      "order": 0,
+      "width": 0,
+      "height": 0,
+      "gtype": "gage",
+      "title": "Sensor 4",
+      "label": "SFU",
+      "format": "{{value}}",
+      "min": "-5",
+      "max": "120",
+      "colors": [
+        "#ca3737",
+        "#00b500",
+        "#e6e600"
+      ],
+      "seg1": "0",
+      "seg2": "100",
+      "x": 610,
+      "y": 640,
+      "wires": []
+    },
+    {
+      "id": "e5e2ecce.91d34",
+      "type": "ui_gauge",
+      "z": "8d41325d.cfe5d",
+      "name": "Temp2",
+      "group": "85523dc2.1abb2",
+      "order": 0,
+      "width": 0,
+      "height": 0,
+      "gtype": "gage",
+      "title": "Sensor 2",
+      "label": "C",
+      "format": "{{value}}",
+      "min": "-20",
+      "max": "50",
+      "colors": [
+        "#ffffff",
+        "#ffff80",
+        "#ff0000"
+      ],
+      "seg1": "0",
+      "seg2": "40",
+      "x": 610,
+      "y": 400,
+      "wires": []
+    },
+    {
+      "id": "1e1f1c96.85c753",
+      "type": "ui_gauge",
+      "z": "8d41325d.cfe5d",
+      "name": "Temp3",
+      "group": "85523dc2.1abb2",
+      "order": 0,
+      "width": 0,
+      "height": 0,
+      "gtype": "gage",
+      "title": "Sensor 3",
+      "label": "C",
+      "format": "{{value}}",
+      "min": "-20",
+      "max": "50",
+      "colors": [
+        "#ffffff",
+        "#ffff80",
+        "#ff0000"
+      ],
+      "seg1": "0",
+      "seg2": "40",
+      "x": 610,
+      "y": 440,
+      "wires": []
+    },
+    {
+      "id": "da68c3e.b8ec74",
+      "type": "ui_gauge",
+      "z": "8d41325d.cfe5d",
+      "name": "Temp4",
+      "group": "85523dc2.1abb2",
+      "order": 0,
+      "width": 0,
+      "height": 0,
+      "gtype": "gage",
+      "title": "Sensor 4",
+      "label": "C",
+      "format": "{{value}}",
+      "min": "-20",
+      "max": "50",
+      "colors": [
+        "#ffffff",
+        "#ffff80",
+        "#ff0000"
+      ],
+      "seg1": "0",
+      "seg2": "40",
+      "x": 610,
+      "y": 480,
+      "wires": []
+    },
+    {
+      "id": "243725fa.173c8a",
+      "type": "ui_text",
+      "z": "8d41325d.cfe5d",
+      "group": "8d2b20ec.f570a",
+      "order": 3,
+      "width": 0,
+      "height": 0,
+      "name": "Temp Notification",
+      "label": "Temperature Data Last Updated",
+      "format": "{{msg.payload}}",
+      "layout": "col-center",
+      "x": 940,
+      "y": 440,
+      "wires": []
+    },
+    {
+      "id": "7dbcb81d.450298",
+      "type": "function",
+      "z": "8d41325d.cfe5d",
+      "name": "Last Updated",
+      "func": "function returnTime(value){\n    var now     = new Date(value+36000000); \n    var year    = now.getFullYear();\n    var month   = now.getMonth()+1; \n    var day     = now.getDate();\n    var hour    = now.getHours();\n    var minute  = now.getMinutes();\n    var second  = now.getSeconds(); \n    if(month.toString().length == 1) {\n        month = '0'+month;\n    }\n    if(day.toString().length == 1) {\n        day = '0'+day;\n    }   \n    if(hour.toString().length == 1) {\n        hour = '0'+hour;\n    }\n    if(minute.toString().length == 1) {\n        minute = '0'+minute;\n    }\n    if(second.toString().length == 1) {\n        second = '0'+second;\n    }\n    \n    var timestamp = month+'-'+day+' '+hour+':'+minute+':'+second;\n    return timestamp;\n}\n\nmsg.payload = returnTime(msg.payload.otherData.Timestamp);\nreturn msg;",
+      "outputs": 1,
+      "noerr": 0,
+      "x": 760,
+      "y": 440,
+      "wires": [
+        [
+          "243725fa.173c8a"
+        ]
+      ]
+    },
+    {
+      "id": "dc5e95bd.030408",
+      "type": "ui_text",
+      "z": "8d41325d.cfe5d",
+      "group": "8d2b20ec.f570a",
+      "order": 1,
+      "width": 0,
+      "height": 0,
+      "name": "Interval Notification",
+      "label": "Updating Interval",
+      "format": "{{msg.payload}}",
+      "layout": "row-spread",
+      "x": 940,
+      "y": 480,
+      "wires": []
+    },
+    {
+      "id": "a380bc59.4e89c",
+      "type": "function",
+      "z": "8d41325d.cfe5d",
+      "name": "Interval",
+      "func": "//interval = msg.payload.otherData.Interval;\n//msg.payload = interval+\" min\";\nmsg.payload = \"60 min\";\nreturn msg;",
+      "outputs": 1,
+      "noerr": 0,
+      "x": 750,
+      "y": 480,
+      "wires": [
+        [
+          "dc5e95bd.030408"
+        ]
+      ]
+    },
+    {
+      "id": "4779c80.91cc338",
+      "type": "ui_text",
+      "z": "8d41325d.cfe5d",
+      "group": "8d2b20ec.f570a",
+      "order": 2,
+      "width": 0,
+      "height": 0,
+      "name": "Soil Notification",
+      "label": "Soil Moisture Data Last Updated",
+      "format": "{{msg.payload}}",
+      "layout": "col-center",
+      "x": 930,
+      "y": 520,
+      "wires": []
+    },
+    {
+      "id": "e447c307.5d3da",
+      "type": "function",
+      "z": "8d41325d.cfe5d",
+      "name": "Last Updated",
+      "func": "function returnTime(value){\n    var now     = new Date(value+36000000); \n    var year    = now.getFullYear();\n    var month   = now.getMonth()+1; \n    var day     = now.getDate();\n    var hour    = now.getHours();\n    var minute  = now.getMinutes();\n    var second  = now.getSeconds(); \n    if(month.toString().length == 1) {\n        month = '0'+month;\n    }\n    if(day.toString().length == 1) {\n        day = '0'+day;\n    }   \n    if(hour.toString().length == 1) {\n        hour = '0'+hour;\n    }\n    if(minute.toString().length == 1) {\n        minute = '0'+minute;\n    }\n    if(second.toString().length == 1) {\n        second = '0'+second;\n    }\n    \n    var timestamp = month+'-'+day+' '+hour+':'+minute+':'+second;\n    return timestamp;\n}\n\nmsg.payload = returnTime(msg.payload.otherData.Timestamp);\nreturn msg;",
+      "outputs": 1,
+      "noerr": 0,
+      "x": 760,
+      "y": 520,
+      "wires": [
+        [
+          "4779c80.91cc338"
+        ]
+      ]
+    },
+    {
+      "id": "cf9a1d2a.8a0af",
+      "type": "change",
+      "z": "32d0f8de.632a18",
+      "name": "Start Date - 18/07/2018",
+      "rules": [
+        {
+          "t": "set",
+          "p": "StartTime",
+          "pt": "global",
+          "to": "1531872000000",
+          "tot": "num"
+        }
+      ],
+      "action": "",
+      "property": "",
+      "from": "",
+      "to": "",
+      "reg": false,
+      "x": 310,
+      "y": 360,
+      "wires": [
+        [
+          "506df4dd.41dfec"
+        ]
+      ]
+    },
+    {
+      "id": "839204d0.07a868",
+      "type": "change",
+      "z": "32d0f8de.632a18",
+      "name": "End Date - 18/07/2018",
+      "rules": [
+        {
+          "t": "set",
+          "p": "EndTime",
+          "pt": "global",
+          "to": "1531872000000",
+          "tot": "num"
+        }
+      ],
+      "action": "",
+      "property": "",
+      "from": "",
+      "to": "",
+      "reg": false,
+      "x": 300,
+      "y": 400,
+      "wires": [
+        [
+          "a2dd53af.63101"
+        ]
+      ]
+    },
+    {
+      "id": "fdaa876d.f8b3a8",
+      "type": "inject",
+      "z": "32d0f8de.632a18",
+      "name": "",
+      "topic": "",
+      "payload": "true",
+      "payloadType": "bool",
+      "repeat": "",
+      "crontab": "",
+      "once": true,
+      "onceDelay": "",
+      "x": 110,
+      "y": 380,
+      "wires": [
+        [
+          "cf9a1d2a.8a0af",
+          "839204d0.07a868"
+        ]
+      ]
+    },
+    {
+      "id": "8c5543dc.3aee",
+      "type": "ui_date_picker",
+      "z": "32d0f8de.632a18",
+      "name": "",
+      "label": "Start Date",
+      "group": "14eb7ea0.161a51",
+      "order": 2,
+      "width": "5",
+      "height": "1",
+      "passthru": true,
+      "topic": "",
+      "x": 640,
+      "y": 360,
+      "wires": [
+        [
+          "810f7bb3.ef2368"
+        ]
+      ]
+    },
+    {
+      "id": "645e20a4.887f4",
+      "type": "ui_date_picker",
+      "z": "32d0f8de.632a18",
+      "name": "",
+      "label": "End Date",
+      "group": "14eb7ea0.161a51",
+      "order": 3,
+      "width": "5",
+      "height": "1",
+      "passthru": true,
+      "topic": "",
+      "x": 640,
+      "y": 400,
+      "wires": [
+        [
+          "53e7538f.a4b3ec"
+        ]
+      ]
+    },
+    {
+      "id": "810f7bb3.ef2368",
+      "type": "change",
+      "z": "32d0f8de.632a18",
+      "name": "Set Start Time Range",
+      "rules": [
+        {
+          "t": "set",
+          "p": "StartTime",
+          "pt": "global",
+          "to": "payload",
+          "tot": "msg"
+        }
+      ],
+      "action": "",
+      "property": "",
+      "from": "",
+      "to": "",
+      "reg": false,
+      "x": 820,
+      "y": 360,
+      "wires": [
+        []
+      ]
+    },
+    {
+      "id": "53e7538f.a4b3ec",
+      "type": "change",
+      "z": "32d0f8de.632a18",
+      "name": "Set End Time Range",
+      "rules": [
+        {
+          "t": "set",
+          "p": "EndTime",
+          "pt": "global",
+          "to": "payload",
+          "tot": "msg"
+        }
+      ],
+      "action": "",
+      "property": "",
+      "from": "",
+      "to": "",
+      "reg": false,
+      "x": 820,
+      "y": 400,
+      "wires": [
+        []
+      ]
+    },
+    {
+      "id": "506df4dd.41dfec",
+      "type": "change",
+      "z": "32d0f8de.632a18",
+      "name": "Start Date",
+      "rules": [
+        {
+          "t": "set",
+          "p": "payload",
+          "pt": "msg",
+          "to": "StartTime",
+          "tot": "global"
+        }
+      ],
+      "action": "",
+      "property": "",
+      "from": "",
+      "to": "",
+      "reg": false,
+      "x": 500,
+      "y": 360,
+      "wires": [
+        [
+          "8c5543dc.3aee"
+        ]
+      ]
+    },
+    {
+      "id": "a2dd53af.63101",
+      "type": "change",
+      "z": "32d0f8de.632a18",
+      "name": "End Date",
+      "rules": [
+        {
+          "t": "set",
+          "p": "payload",
+          "pt": "msg",
+          "to": "EndTime",
+          "tot": "global"
+        }
+      ],
+      "action": "",
+      "property": "",
+      "from": "",
+      "to": "",
+      "reg": false,
+      "x": 500,
+      "y": 400,
+      "wires": [
+        [
+          "645e20a4.887f4"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1097 @@
+{
+    "_id": "Xkit-2BEBC3/flow",
+    "_rev": "47-b30bdb4d95766b6662124b75cf39a529",
+    "flow": [
+        {
+            "id": "2c921cd5.545c04",
+            "type": "tab",
+            "label": "Current Data",
+            "disabled": false,
+            "info": ""
+        },
+        {
+            "id": "e564841b.65f618",
+            "type": "tab",
+            "label": "Historical Data",
+            "disabled": false,
+            "info": ""
+        },
+        {
+            "id": "afd5fdb7.fefa1",
+            "type": "ui_base",
+            "theme": {
+                "name": "theme-light",
+                "lightTheme": {
+                    "default": "#0094CE",
+                    "baseColor": "#0094CE",
+                    "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                    "edited": true,
+                    "reset": false
+                },
+                "darkTheme": {
+                    "default": "#097479",
+                    "baseColor": "#097479",
+                    "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                    "edited": false
+                },
+                "customTheme": {
+                    "name": "Untitled Theme 1",
+                    "default": "#4B7930",
+                    "baseColor": "#4B7930",
+                    "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                },
+                "themeState": {
+                    "base-color": {
+                        "default": "#0094CE",
+                        "value": "#0094CE",
+                        "edited": false
+                    },
+                    "page-titlebar-backgroundColor": {
+                        "value": "#0094CE",
+                        "edited": false
+                    },
+                    "page-backgroundColor": {
+                        "value": "#fafafa",
+                        "edited": false
+                    },
+                    "page-sidebar-backgroundColor": {
+                        "value": "#ffffff",
+                        "edited": false
+                    },
+                    "group-textColor": {
+                        "value": "#1bbfff",
+                        "edited": false
+                    },
+                    "group-borderColor": {
+                        "value": "#ffffff",
+                        "edited": false
+                    },
+                    "group-backgroundColor": {
+                        "value": "#ffffff",
+                        "edited": false
+                    },
+                    "widget-textColor": {
+                        "value": "#111111",
+                        "edited": false
+                    },
+                    "widget-backgroundColor": {
+                        "value": "#0094ce",
+                        "edited": false
+                    },
+                    "widget-borderColor": {
+                        "value": "#ffffff",
+                        "edited": false
+                    },
+                    "base-font": {
+                        "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                    }
+                }
+            },
+            "site": {
+                "name": "Node-RED Dashboard",
+                "hideToolbar": "false",
+                "allowSwipe": "true",
+                "allowTempTheme": "true",
+                "dateFormat": "DD/MM/YYYY",
+                "sizes": {
+                    "sx": 48,
+                    "sy": 48,
+                    "gx": 6,
+                    "gy": 6,
+                    "cx": 6,
+                    "cy": 6,
+                    "px": 0,
+                    "py": 0
+                }
+            }
+        },
+        {
+            "id": "ba35ba73.21f9b8",
+            "type": "ibmiot",
+            "z": "",
+            "name": "SigFox Access Key 2",
+            "keepalive": "60",
+            "serverName": "bmkdvv.messaging.internetofthings.ibmcloud.com",
+            "cleansession": false,
+            "appId": "",
+            "shared": false
+        },
+        {
+            "id": "da59a7ae.6dc7a8",
+            "type": "ui_tab",
+            "z": "",
+            "name": "Real-Time Data",
+            "icon": "dashboard"
+        },
+        {
+            "id": "90f59d62.64e3b",
+            "type": "ui_group",
+            "z": "",
+            "name": "Notification",
+            "tab": "da59a7ae.6dc7a8",
+            "order": 1,
+            "disp": true,
+            "width": "6",
+            "collapse": true
+        },
+        {
+            "id": "6914675d.babc48",
+            "type": "ui_tab",
+            "z": "",
+            "name": "Historical Data",
+            "icon": "dashboard"
+        },
+        {
+            "id": "28f48111.935d1e",
+            "type": "ui_group",
+            "z": "",
+            "name": "Water Level Data",
+            "tab": "6914675d.babc48",
+            "disp": true,
+            "width": "11",
+            "collapse": true
+        },
+        {
+            "id": "cea1c691.ab75f8",
+            "type": "ui_group",
+            "z": "",
+            "name": "Water Height Data",
+            "tab": "6914675d.babc48",
+            "disp": true,
+            "width": "11",
+            "collapse": true
+        },
+        {
+            "id": "123b3ee0.96f141",
+            "type": "ui_group",
+            "z": "",
+            "name": "Water Level Data",
+            "tab": "da59a7ae.6dc7a8",
+            "order": 2,
+            "disp": true,
+            "width": "6",
+            "collapse": true
+        },
+        {
+            "id": "a3e4f90.3235108",
+            "type": "ui_group",
+            "z": "",
+            "name": "Water Height Data",
+            "tab": "da59a7ae.6dc7a8",
+            "order": 3,
+            "disp": true,
+            "width": "6",
+            "collapse": true
+        },
+        {
+            "id": "d7e8abb4.f41078",
+            "type": "ibmiot in",
+            "z": "2c921cd5.545c04",
+            "authentication": "apiKey",
+            "apiKey": "ba35ba73.21f9b8",
+            "inputType": "evt",
+            "logicalInterface": "",
+            "ruleId": "",
+            "deviceId": "2BEBC3",
+            "applicationId": "",
+            "deviceType": "+",
+            "eventType": "+",
+            "commandType": "",
+            "format": "json",
+            "name": "IBM IoT",
+            "service": "registered",
+            "allDevices": "",
+            "allApplications": "",
+            "allDeviceTypes": true,
+            "allLogicalInterfaces": "",
+            "allEvents": true,
+            "allCommands": "",
+            "allFormats": "",
+            "qos": 0,
+            "x": 96.00000190734863,
+            "y": 220.00000762939453,
+            "wires": [
+                [
+                    "4dc3965b.471888"
+                ]
+            ]
+        },
+        {
+            "id": "43c6332e.7117fc",
+            "type": "function",
+            "z": "2c921cd5.545c04",
+            "name": "Payload_parsing",
+            "func": "var Data = msg.payload.data;\nvar Dlength = Data.length;\nmsg.payload.otherData.Length = Dlength;\nvar type = Number('0x'+Data.slice(Dlength-2));\nmsg.payload.otherData.Type = type;\nvar T = msg.payload.time*1000;\nmsg.payload.otherData.Timestamp = T;\n\nif(type==1)\n    msg.payload.otherData.Level = Number('0x'+Data.slice(0,2));\nelse if(type==2){\n    var voltage = Number('0x'+Data.slice(0,4));\n    var height = 0;\n    if(voltage!==0)\n        height = 25.4 + (voltage+1)/1024*797.6;\n    msg.payload.otherData.Voltage = voltage;\n    msg.payload.otherData.Height = height.toFixed(2);\n}\n\nmsg.payload.otherData.datadecoded = '1';\nreturn msg;\n",
+            "outputs": 1,
+            "noerr": 0,
+            "x": 431.00000762939453,
+            "y": 220.0000081062317,
+            "wires": [
+                [
+                    "ee0467b5.97ae38",
+                    "b50bedcc.86c45",
+                    "14eb257f.0e563b"
+                ]
+            ]
+        },
+        {
+            "id": "ee0467b5.97ae38",
+            "type": "ibmiot out",
+            "z": "2c921cd5.545c04",
+            "authentication": "apiKey",
+            "apiKey": "ba35ba73.21f9b8",
+            "outputType": "evt",
+            "deviceId": "2BEBC3",
+            "deviceType": "0.18.4",
+            "eventCommandType": "datadecoded",
+            "format": "json",
+            "data": "msg.payload",
+            "qos": 0,
+            "name": "IBM IoT",
+            "service": "registered",
+            "x": 700.9999694824219,
+            "y": 143.00001525878906,
+            "wires": []
+        },
+        {
+            "id": "4dc3965b.471888",
+            "type": "switch",
+            "z": "2c921cd5.545c04",
+            "name": "Switch",
+            "property": "payload.otherData.datadecoded",
+            "propertyType": "msg",
+            "rules": [
+                {
+                    "t": "eq",
+                    "v": "0",
+                    "vt": "str"
+                }
+            ],
+            "checkall": "true",
+            "repair": false,
+            "outputs": 1,
+            "x": 250,
+            "y": 220,
+            "wires": [
+                [
+                    "43c6332e.7117fc"
+                ]
+            ]
+        },
+        {
+            "id": "b50bedcc.86c45",
+            "type": "debug",
+            "z": "2c921cd5.545c04",
+            "name": "msg",
+            "active": true,
+            "tosidebar": true,
+            "console": false,
+            "tostatus": false,
+            "complete": "true",
+            "x": 683.9999980926514,
+            "y": 196.0000286102295,
+            "wires": []
+        },
+        {
+            "id": "14eb257f.0e563b",
+            "type": "link out",
+            "z": "2c921cd5.545c04",
+            "name": "",
+            "links": [
+                "1ef30eac.de6431",
+                "246b287b.ad16b8",
+                "90f57fca.87064"
+            ],
+            "x": 599.9999694824219,
+            "y": 250.00002098083496,
+            "wires": []
+        },
+        {
+            "id": "897f5a3e.e540e8",
+            "type": "cloudant in",
+            "z": "e564841b.65f618",
+            "name": "leveldata",
+            "cloudant": "",
+            "database": "leveldata",
+            "service": "Xkit-2BEBC3-cloudantNoSQLDB",
+            "search": "_all_",
+            "design": "",
+            "index": "",
+            "x": 260,
+            "y": 100,
+            "wires": [
+                [
+                    "4ae60d6b.f9c9a4"
+                ]
+            ]
+        },
+        {
+            "id": "4ae60d6b.f9c9a4",
+            "type": "function",
+            "z": "e564841b.65f618",
+            "name": "Chart Array for Level Data",
+            "func": "// This function reformats the timeseries data into an array that \n// Chart.js (See http://www.chartjs.org/ ) will plot\n// The node-red-dashboard Chart node uses Chart.js \n\nfunction returnTime(value){\n    var now     = new Date(value+36000000); \n    var year    = now.getFullYear();\n    var month   = now.getMonth()+1; \n    var day     = now.getDate();\n    var hour    = now.getHours();\n    var minute  = now.getMinutes();\n    var second  = now.getSeconds(); \n    if(month.toString().length == 1) {\n        month = '0'+month;\n    }\n    if(day.toString().length == 1) {\n        day = '0'+day;\n    }   \n    if(hour.toString().length == 1) {\n        hour = '0'+hour;\n    }\n    if(minute.toString().length == 1) {\n        minute = '0'+minute;\n    }\n    if(second.toString().length == 1) {\n        second = '0'+second;\n    }\n    \n    var timestamp = month+'-'+day+' '+hour+':'+minute+':'+second;\n    return timestamp;\n}\n\nvar StartTime = global.get(\"StartTime\")-36000000;\nvar EndTime = global.get(\"EndTime\")+86400000-36000000;\n\nvar ChartData = [ {\"series\":[\"Data\"],\n                   \"data\":[[{\"x\":msg.payload[0].data.Timestamp,\"y\":msg.payload[0].data.Level}]],\n                   \"labels\":[\"\"]}];\n\nfor( var i=1; i < msg.payload.length; i++ ) {\n    var time1=msg.payload[i].data.Timestamp;\n    if(time1>=StartTime && time1<=EndTime)\n        ChartData[0].data[0].push({\"x\":time1,\"y\":msg.payload[i].data.Level});\n}\n\nvar time1=ChartData[0].data[0][0].x;\nif(time1<StartTime || time1>EndTime)\n    ChartData[0].data[0].shift();\n\nChartData[0].data[0].sort(function sortNumber(a,b) { return a.x - b.x; });\n\nmsg.payload = ChartData;\nreturn msg;\n\n",
+            "outputs": 1,
+            "noerr": 0,
+            "x": 486.0001029968262,
+            "y": 100.00003814697266,
+            "wires": [
+                [
+                    "f3d9d299.57227"
+                ]
+            ]
+        },
+        {
+            "id": "a607fa46.1b1b38",
+            "type": "cloudant in",
+            "z": "e564841b.65f618",
+            "name": "heightdata",
+            "cloudant": "",
+            "database": "heightdata",
+            "service": "Xkit-2BEBC3-cloudantNoSQLDB",
+            "search": "_all_",
+            "design": "",
+            "index": "",
+            "x": 270,
+            "y": 260,
+            "wires": [
+                [
+                    "e41b3b.43cb94c8"
+                ]
+            ]
+        },
+        {
+            "id": "e41b3b.43cb94c8",
+            "type": "function",
+            "z": "e564841b.65f618",
+            "name": "Chart Array for Height Data",
+            "func": "var StartTime = global.get(\"StartTime\")-36000000;\nvar EndTime = global.get(\"EndTime\")+86400000-36000000;\n\nvar ChartData = [ {\"series\":[\"Data\"],\n                   \"data\":[[{\"x\":msg.payload[0].data.Timestamp,\"y\":msg.payload[0].data.Height}]],\n                   \"labels\":[\"\"]}];\n\nfor( var i=1; i < msg.payload.length; i++ ) {\n    var time1=msg.payload[i].data.Timestamp;\n    if(time1>=StartTime && time1<=EndTime)\n        ChartData[0].data[0].push({\"x\":time1,\"y\":msg.payload[i].data.Height});\n}\n\nvar time1=ChartData[0].data[0][0].x;\nif(time1<StartTime || time1>EndTime)\n    ChartData[0].data[0].shift();\n\nChartData[0].data[0].sort(function sortNumber(a,b) { return a.x - b.x; });\n\nmsg.payload = ChartData;\nreturn msg;\n\n",
+            "outputs": 1,
+            "noerr": 0,
+            "x": 503,
+            "y": 261.00000953674316,
+            "wires": [
+                [
+                    "ba8bc1d.2de134"
+                ]
+            ]
+        },
+        {
+            "id": "cde57927.859078",
+            "type": "ui_button",
+            "z": "e564841b.65f618",
+            "name": "",
+            "group": "28f48111.935d1e",
+            "order": 4,
+            "width": "2",
+            "height": "1",
+            "passthru": false,
+            "label": "Display",
+            "color": "",
+            "bgcolor": "",
+            "icon": "",
+            "payload": "",
+            "payloadType": "str",
+            "topic": "",
+            "x": 89,
+            "y": 182.00000953674316,
+            "wires": [
+                [
+                    "a607fa46.1b1b38",
+                    "897f5a3e.e540e8"
+                ]
+            ]
+        },
+        {
+            "id": "f5e164ae.87aba8",
+            "type": "ui_button",
+            "z": "e564841b.65f618",
+            "name": "",
+            "group": "28f48111.935d1e",
+            "order": 5,
+            "width": "2",
+            "height": "1",
+            "passthru": false,
+            "label": "Clear",
+            "color": "",
+            "bgcolor": "",
+            "icon": "",
+            "payload": "[]",
+            "payloadType": "json",
+            "topic": "",
+            "x": 528,
+            "y": 184.00000953674316,
+            "wires": [
+                [
+                    "f3d9d299.57227",
+                    "ba8bc1d.2de134"
+                ]
+            ]
+        },
+        {
+            "id": "f3d9d299.57227",
+            "type": "ui_chart",
+            "z": "e564841b.65f618",
+            "name": "Level Chart",
+            "group": "28f48111.935d1e",
+            "order": 1,
+            "width": 0,
+            "height": 0,
+            "label": "Water Level",
+            "chartType": "line",
+            "legend": "false",
+            "xformat": "MM-DD HH:mm",
+            "interpolate": "linear",
+            "nodata": "Select DATEs and then click DISPLAY button to display historical data.",
+            "dot": true,
+            "ymin": "",
+            "ymax": "",
+            "removeOlder": "1",
+            "removeOlderPoints": "",
+            "removeOlderUnit": "604800",
+            "cutout": 0,
+            "useOneColor": false,
+            "colors": [
+                "#1f77b4",
+                "#aec7e8",
+                "#ff7f0e",
+                "#2ca02c",
+                "#98df8a",
+                "#d62728",
+                "#ff9896",
+                "#9467bd",
+                "#c5b0d5"
+            ],
+            "useOldStyle": false,
+            "x": 731.9999675750732,
+            "y": 99.00000476837158,
+            "wires": [
+                [],
+                []
+            ]
+        },
+        {
+            "id": "ba8bc1d.2de134",
+            "type": "ui_chart",
+            "z": "e564841b.65f618",
+            "name": "Height Chart",
+            "group": "cea1c691.ab75f8",
+            "order": 1,
+            "width": 0,
+            "height": 0,
+            "label": "Water Height (mm)",
+            "chartType": "line",
+            "legend": "false",
+            "xformat": "MM-DD HH:mm",
+            "interpolate": "linear",
+            "nodata": "Select DATEs and then click DISPLAY button to display historical data.",
+            "dot": true,
+            "ymin": "",
+            "ymax": "",
+            "removeOlder": "1",
+            "removeOlderPoints": "",
+            "removeOlderUnit": "604800",
+            "cutout": 0,
+            "useOneColor": false,
+            "colors": [
+                "#1f77b4",
+                "#aec7e8",
+                "#ff7f0e",
+                "#2ca02c",
+                "#98df8a",
+                "#d62728",
+                "#ff9896",
+                "#9467bd",
+                "#c5b0d5"
+            ],
+            "useOldStyle": false,
+            "x": 766.9999961853027,
+            "y": 260.0000238418579,
+            "wires": [
+                [],
+                []
+            ]
+        },
+        {
+            "id": "a69082a2.cd611",
+            "type": "debug",
+            "z": "e564841b.65f618",
+            "name": "",
+            "active": true,
+            "tosidebar": true,
+            "console": false,
+            "tostatus": false,
+            "complete": "payload",
+            "x": 728.0002021789551,
+            "y": 187.00002098083496,
+            "wires": []
+        },
+        {
+            "id": "54fc2203.c03fdc",
+            "type": "change",
+            "z": "e564841b.65f618",
+            "name": "Set Start Time Range",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "StartTime",
+                    "pt": "global",
+                    "to": "payload",
+                    "tot": "msg"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 940.2950592041016,
+            "y": 356.83585929870605,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "4775f35a.8009fc",
+            "type": "change",
+            "z": "e564841b.65f618",
+            "name": "Set End Time Range",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "EndTime",
+                    "pt": "global",
+                    "to": "payload",
+                    "tot": "msg"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 943.2948837280273,
+            "y": 395.83574295043945,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "67cf432a.d14f4c",
+            "type": "debug",
+            "z": "e564841b.65f618",
+            "name": "",
+            "active": true,
+            "tosidebar": true,
+            "console": false,
+            "tostatus": false,
+            "complete": "payload",
+            "x": 928.2948570251465,
+            "y": 304.83585929870605,
+            "wires": []
+        },
+        {
+            "id": "6ed2c0d1.d9e5a",
+            "type": "debug",
+            "z": "e564841b.65f618",
+            "name": "",
+            "active": true,
+            "tosidebar": true,
+            "console": false,
+            "tostatus": false,
+            "complete": "payload",
+            "x": 912.2949104309082,
+            "y": 566.8357009887695,
+            "wires": []
+        },
+        {
+            "id": "13907225.2044fe",
+            "type": "function",
+            "z": "2c921cd5.545c04",
+            "name": "Level Data",
+            "func": "return {\n    payload: {\n        data: msg.payload.otherData\n    }\n};",
+            "outputs": 1,
+            "noerr": 0,
+            "x": 424.00001525878906,
+            "y": 317.5074348449707,
+            "wires": [
+                [
+                    "7f260e15.ca3a"
+                ]
+            ]
+        },
+        {
+            "id": "7f260e15.ca3a",
+            "type": "cloudant out",
+            "z": "2c921cd5.545c04",
+            "name": "",
+            "cloudant": "",
+            "database": "leveldata",
+            "service": "Xkit-2BEBC3-cloudantNoSQLDB",
+            "payonly": true,
+            "operation": "insert",
+            "x": 641.9999961853027,
+            "y": 316.50744819641113,
+            "wires": []
+        },
+        {
+            "id": "90f57fca.87064",
+            "type": "link in",
+            "z": "2c921cd5.545c04",
+            "name": "",
+            "links": [
+                "14eb257f.0e563b"
+            ],
+            "x": 52,
+            "y": 430.50744819641113,
+            "wires": [
+                [
+                    "a9eb2898.bfc888"
+                ]
+            ]
+        },
+        {
+            "id": "a9eb2898.bfc888",
+            "type": "switch",
+            "z": "2c921cd5.545c04",
+            "name": "Switch",
+            "property": "payload.otherData.Type",
+            "propertyType": "msg",
+            "rules": [
+                {
+                    "t": "eq",
+                    "v": "1",
+                    "vt": "num"
+                },
+                {
+                    "t": "eq",
+                    "v": "2",
+                    "vt": "num"
+                }
+            ],
+            "checkall": "true",
+            "repair": false,
+            "outputs": 2,
+            "x": 167,
+            "y": 430.50744819641113,
+            "wires": [
+                [
+                    "13907225.2044fe",
+                    "8e4e137c.2b67f",
+                    "f23fc741.693728"
+                ],
+                [
+                    "71c3343a.4083cc",
+                    "80790493.985e28",
+                    "96fc54d6.fa99e8"
+                ]
+            ]
+        },
+        {
+            "id": "80790493.985e28",
+            "type": "function",
+            "z": "2c921cd5.545c04",
+            "name": "Height Data",
+            "func": "return {\n    payload: {\n        data: msg.payload.otherData\n    }\n};\n\n    ",
+            "outputs": 1,
+            "noerr": 0,
+            "x": 424.00001525878906,
+            "y": 552.5074338912964,
+            "wires": [
+                [
+                    "b490a64f.3e3b08"
+                ]
+            ]
+        },
+        {
+            "id": "b490a64f.3e3b08",
+            "type": "cloudant out",
+            "z": "2c921cd5.545c04",
+            "name": "",
+            "cloudant": "",
+            "database": "heightdata",
+            "service": "Xkit-2BEBC3-cloudantNoSQLDB",
+            "payonly": true,
+            "operation": "insert",
+            "x": 652,
+            "y": 551.5074348449707,
+            "wires": []
+        },
+        {
+            "id": "8e4e137c.2b67f",
+            "type": "function",
+            "z": "2c921cd5.545c04",
+            "name": "Level",
+            "func": "msg = {payload:msg.payload.otherData.Level, timestamp:msg.payload.otherData.Timestamp};\nreturn msg;",
+            "outputs": 1,
+            "noerr": 0,
+            "x": 406.0000801086426,
+            "y": 361.50739097595215,
+            "wires": [
+                [
+                    "15aae931.f420b7"
+                ]
+            ]
+        },
+        {
+            "id": "2eec9535.650cda",
+            "type": "ui_text",
+            "z": "2c921cd5.545c04",
+            "group": "90f59d62.64e3b",
+            "order": 1,
+            "width": 0,
+            "height": 0,
+            "name": "Level Notification",
+            "label": "Water Level Last Updated",
+            "format": "{{msg.payload}}",
+            "layout": "col-center",
+            "x": 643.9999828338623,
+            "y": 415.5074634552002,
+            "wires": []
+        },
+        {
+            "id": "f23fc741.693728",
+            "type": "function",
+            "z": "2c921cd5.545c04",
+            "name": "Last Updated",
+            "func": "function returnTime(value){\n    var now     = new Date(value+36000000); \n    var year    = now.getFullYear();\n    var month   = now.getMonth()+1; \n    var day     = now.getDate();\n    var hour    = now.getHours();\n    var minute  = now.getMinutes();\n    var second  = now.getSeconds(); \n    if(month.toString().length == 1) {\n        month = '0'+month;\n    }\n    if(day.toString().length == 1) {\n        day = '0'+day;\n    }   \n    if(hour.toString().length == 1) {\n        hour = '0'+hour;\n    }\n    if(minute.toString().length == 1) {\n        minute = '0'+minute;\n    }\n    if(second.toString().length == 1) {\n        second = '0'+second;\n    }\n    \n    var timestamp = month+'-'+day+' '+hour+':'+minute+':'+second;\n    return timestamp;\n}\n\nmsg.payload = returnTime(msg.payload.otherData.Timestamp);\nreturn msg;",
+            "outputs": 1,
+            "noerr": 0,
+            "x": 426.0000305175781,
+            "y": 415.50744915008545,
+            "wires": [
+                [
+                    "2eec9535.650cda"
+                ]
+            ]
+        },
+        {
+            "id": "86db7673.542348",
+            "type": "ui_text",
+            "z": "2c921cd5.545c04",
+            "group": "90f59d62.64e3b",
+            "order": 2,
+            "width": 0,
+            "height": 0,
+            "name": "Height Notification",
+            "label": "Water Height Last Updated",
+            "format": "{{msg.payload}}",
+            "layout": "col-center",
+            "x": 648.3181838989258,
+            "y": 453.23007583618164,
+            "wires": []
+        },
+        {
+            "id": "71c3343a.4083cc",
+            "type": "function",
+            "z": "2c921cd5.545c04",
+            "name": "Last Updated",
+            "func": "function returnTime(value){\n    var now     = new Date(value+36000000); \n    var year    = now.getFullYear();\n    var month   = now.getMonth()+1; \n    var day     = now.getDate();\n    var hour    = now.getHours();\n    var minute  = now.getMinutes();\n    var second  = now.getSeconds(); \n    if(month.toString().length == 1) {\n        month = '0'+month;\n    }\n    if(day.toString().length == 1) {\n        day = '0'+day;\n    }   \n    if(hour.toString().length == 1) {\n        hour = '0'+hour;\n    }\n    if(minute.toString().length == 1) {\n        minute = '0'+minute;\n    }\n    if(second.toString().length == 1) {\n        second = '0'+second;\n    }\n    \n    var timestamp = month+'-'+day+' '+hour+':'+minute+':'+second;\n    return timestamp;\n}\n\nmsg.payload = returnTime(msg.payload.otherData.Timestamp);\nreturn msg;",
+            "outputs": 1,
+            "noerr": 0,
+            "x": 426,
+            "y": 452.5074634552002,
+            "wires": [
+                [
+                    "86db7673.542348"
+                ]
+            ]
+        },
+        {
+            "id": "96fc54d6.fa99e8",
+            "type": "function",
+            "z": "2c921cd5.545c04",
+            "name": "Height",
+            "func": "msg = {payload:msg.payload.otherData.Height, timestamp:msg.payload.otherData.Timestamp};\nreturn msg;",
+            "outputs": 1,
+            "noerr": 0,
+            "x": 403,
+            "y": 503.5074634552002,
+            "wires": [
+                [
+                    "150e7860.d7f4e8"
+                ]
+            ]
+        },
+        {
+            "id": "15aae931.f420b7",
+            "type": "ui_chart",
+            "z": "2c921cd5.545c04",
+            "name": "Level Chart",
+            "group": "123b3ee0.96f141",
+            "order": 1,
+            "width": 0,
+            "height": 0,
+            "label": "Water Level",
+            "chartType": "line",
+            "legend": "false",
+            "xformat": "dd HH:mm",
+            "interpolate": "linear",
+            "nodata": "Waiting for data to arrive.",
+            "dot": true,
+            "ymin": "",
+            "ymax": "",
+            "removeOlder": "12",
+            "removeOlderPoints": "",
+            "removeOlderUnit": "3600",
+            "cutout": 0,
+            "useOneColor": false,
+            "colors": [
+                "#1f77b4",
+                "#aec7e8",
+                "#ff7f0e",
+                "#2ca02c",
+                "#98df8a",
+                "#d62728",
+                "#ff9896",
+                "#9467bd",
+                "#c5b0d5"
+            ],
+            "useOldStyle": true,
+            "x": 632.2685966491699,
+            "y": 360.8806266784668,
+            "wires": [
+                [],
+                []
+            ]
+        },
+        {
+            "id": "150e7860.d7f4e8",
+            "type": "ui_chart",
+            "z": "2c921cd5.545c04",
+            "name": "Height Chart",
+            "group": "a3e4f90.3235108",
+            "order": 0,
+            "width": 0,
+            "height": 0,
+            "label": "Water Height (mm)",
+            "chartType": "line",
+            "legend": "false",
+            "xformat": "dd HH:mm",
+            "interpolate": "linear",
+            "nodata": "Waiting for data to arrive.",
+            "dot": true,
+            "ymin": "",
+            "ymax": "",
+            "removeOlder": "12",
+            "removeOlderPoints": "",
+            "removeOlderUnit": "3600",
+            "cutout": 0,
+            "useOneColor": false,
+            "colors": [
+                "#1f77b4",
+                "#aec7e8",
+                "#ff7f0e",
+                "#2ca02c",
+                "#98df8a",
+                "#d62728",
+                "#ff9896",
+                "#9467bd",
+                "#c5b0d5"
+            ],
+            "useOldStyle": true,
+            "x": 629.0110893249512,
+            "y": 502.5969982147217,
+            "wires": [
+                [],
+                []
+            ]
+        },
+        {
+            "id": "a7a9ca0a.fe7228",
+            "type": "change",
+            "z": "e564841b.65f618",
+            "name": "Start Date - 09/07/2018",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "StartTime",
+                    "pt": "global",
+                    "to": "1531094400000",
+                    "tot": "num"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 304.0111999511719,
+            "y": 357.0149230957031,
+            "wires": [
+                [
+                    "a3821457.5de198"
+                ]
+            ]
+        },
+        {
+            "id": "51dfac56.f40224",
+            "type": "change",
+            "z": "e564841b.65f618",
+            "name": "End Date - 09/07/2018",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "EndTime",
+                    "pt": "global",
+                    "to": "1531094400000",
+                    "tot": "num"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 295.0111846923828,
+            "y": 396.0148983001709,
+            "wires": [
+                [
+                    "377ebf0a.1e80f"
+                ]
+            ]
+        },
+        {
+            "id": "890534c2.84bac8",
+            "type": "inject",
+            "z": "e564841b.65f618",
+            "name": "",
+            "topic": "",
+            "payload": "true",
+            "payloadType": "bool",
+            "repeat": "",
+            "crontab": "",
+            "once": true,
+            "onceDelay": "",
+            "x": 93.01118469238281,
+            "y": 377.0148983001709,
+            "wires": [
+                [
+                    "a7a9ca0a.fe7228",
+                    "51dfac56.f40224"
+                ]
+            ]
+        },
+        {
+            "id": "1f73f017.0bbc1",
+            "type": "ui_date_picker",
+            "z": "e564841b.65f618",
+            "name": "",
+            "label": "Start Date",
+            "group": "28f48111.935d1e",
+            "order": 2,
+            "width": "5",
+            "height": "1",
+            "passthru": true,
+            "topic": "",
+            "x": 731.3059692382812,
+            "y": 356.85071182250977,
+            "wires": [
+                [
+                    "54fc2203.c03fdc",
+                    "67cf432a.d14f4c"
+                ]
+            ]
+        },
+        {
+            "id": "f5560cc3.f6dbd",
+            "type": "ui_date_picker",
+            "z": "e564841b.65f618",
+            "name": "",
+            "label": "End Date",
+            "group": "28f48111.935d1e",
+            "order": 3,
+            "width": "5",
+            "height": "1",
+            "passthru": true,
+            "topic": "",
+            "x": 731.3059692382812,
+            "y": 395.8506689071655,
+            "wires": [
+                [
+                    "4775f35a.8009fc"
+                ]
+            ]
+        },
+        {
+            "id": "a3821457.5de198",
+            "type": "change",
+            "z": "e564841b.65f618",
+            "name": "Start Date",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "StartTime",
+                    "tot": "global"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 529.3060035705566,
+            "y": 356.85080337524414,
+            "wires": [
+                [
+                    "1f73f017.0bbc1"
+                ]
+            ]
+        },
+        {
+            "id": "377ebf0a.1e80f",
+            "type": "change",
+            "z": "e564841b.65f618",
+            "name": "End Date",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "EndTime",
+                    "tot": "global"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 528.3060913085938,
+            "y": 395.8507308959961,
+            "wires": [
+                [
+                    "f5560cc3.f6dbd"
+                ]
+            ]
+        },
+        {
+            "id": "368442f6.4eb55e",
+            "type": "ui_button",
+            "z": "2c921cd5.545c04",
+            "name": "",
+            "group": "123b3ee0.96f141",
+            "order": 2,
+            "width": "2",
+            "height": "1",
+            "passthru": false,
+            "label": "Clear",
+            "color": "",
+            "bgcolor": "",
+            "icon": "",
+            "payload": "[]",
+            "payloadType": "json",
+            "topic": "",
+            "x": 232.01122283935547,
+            "y": 592.5969696044922,
+            "wires": [
+                [
+                    "15aae931.f420b7",
+                    "150e7860.d7f4e8"
+                ]
+            ]
+        }
+    ]
+}
