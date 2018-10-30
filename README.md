@@ -10,18 +10,18 @@ On successful completion of the project, an end-to-end **IoT** application using
 
 ## Three IoT Applications
 
-# [Water level and height monitoring](http://xkit-2bebc3.mybluemix.net/ui)
+### [Water level and height monitoring](http://xkit-2bebc3.mybluemix.net/ui)
 
-# [Monitoring volumetric percentage of moisture in the soil of the garden](http://xkit-3e5ac8.mybluemix.net/ui)
+### [Monitoring volumetric percentage of moisture in the soil of the garden](http://xkit-3e5ac8.mybluemix.net/ui)
 
 ![layout](https://github.com/aprilxindong12/sigfox-iot/blob/master/docs/garden_layout.png)
 
 ![layout_power](https://github.com/aprilxindong12/sigfox-iot/blob/master/docs/garden_power_layout.png)
 
-# [Monitoring soil moisture level in landfill remediation fields](http://xkit-2c5ca8.mybluemix.net/ui)
+### [Monitoring soil moisture level in landfill remediation fields](http://xkit-2c5ca8.mybluemix.net/ui)
 ![layout2](https://github.com/aprilxindong12/sigfox-iot/blob/master/docs/soil_layout.png)
 
-# Libraries
+### Libraries
 
 * [Thinxtra/Xkit-Sample](https://github.com/Thinxtra/Xkit-Sample)
 
