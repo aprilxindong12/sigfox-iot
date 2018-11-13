@@ -11,17 +11,35 @@ On successful completion of the project, an end-to-end **IoT** application using
 ## Three IoT Applications
 
 ### [Water level and height monitoring](http://xkit-2bebc3.mybluemix.net/ui)
+
+**Charts for real-time data on the IBM Watson IoT Platform**
 ![water_dashboard](https://github.com/aprilxindong12/sigfox-iot/blob/master/docs/dashboard/water_dashboard.PNG)
+
+**Dashboard for real-time data set up using Node-RED flows**
 ![water_dashboard2](https://github.com/aprilxindong12/sigfox-iot/blob/master/docs/dashboard/water_dashboard2.PNG)
 
 ### [Monitoring volumetric percentage of moisture in the soil of the garden](http://xkit-3e5ac8.mybluemix.net/ui)
 
+**Layout of the IoT system**
 ![layout](https://github.com/aprilxindong12/sigfox-iot/blob/master/docs/garden_layout.png)
 
+**Layout of the IoT system with power management features**
 ![layout_power](https://github.com/aprilxindong12/sigfox-iot/blob/master/docs/garden_power_layout.png)
 
+**Instances of the dashboard when real-time data present**
+![garden_dashboard](https://github.com/aprilxindong12/sigfox-iot/blob/master/docs/dashboard/garden_dashboard.PNG)
+
+![garden_dashboard2](https://github.com/aprilxindong12/sigfox-iot/blob/master/docs/dashboard/garden_dashboard2.PNG)
+
+![garden_dashboard3](https://github.com/aprilxindong12/sigfox-iot/blob/master/docs/dashboard/garden_dashboard3.PNG)
+
 ### [Monitoring soil moisture level in landfill remediation fields](http://xkit-2c5ca8.mybluemix.net/ui)
+
+**Layout of the IoT field unit**
 ![layout2](https://github.com/aprilxindong12/sigfox-iot/blob/master/docs/soil_layout.png)
+
+**The real-time data tab of the dashboard in use**
+![soil_dashboard](https://github.com/aprilxindong12/sigfox-iot/blob/master/docs/dashboard/soil_dashboard.PNG)
 
 ### Libraries
 
