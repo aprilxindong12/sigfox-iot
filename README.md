@@ -50,6 +50,8 @@ On successful completion of the project, an end-to-end **IoT** application using
 
 ### Libraries
 
+* [AVR libraries](https://www.nongnu.org/avr-libc/user-manual/modules.html)
+
 * [Thinxtra/Xkit-Sample](https://github.com/Thinxtra/Xkit-Sample)
 
 * [SDISerial](https://github.com/joranbeasley/SDISerial)
