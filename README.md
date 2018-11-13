@@ -11,8 +11,8 @@ On successful completion of the project, an end-to-end **IoT** application using
 ## Three IoT Applications
 
 ### [Water level and height monitoring](http://xkit-2bebc3.mybluemix.net/ui)
-![water_dashboard](https://github.com/aprilxindong12/sigfox-iot/blob/master/docs/dashboard/water_dashboard.png)
-![water_dashboard2](https://github.com/aprilxindong12/sigfox-iot/blob/master/docs/dashboard/water_dashboard2.png)
+![water_dashboard](https://github.com/aprilxindong12/sigfox-iot/blob/master/docs/dashboard/water_dashboard.PNG)
+![water_dashboard2](https://github.com/aprilxindong12/sigfox-iot/blob/master/docs/dashboard/water_dashboard2.PNG)
 
 ### [Monitoring volumetric percentage of moisture in the soil of the garden](http://xkit-3e5ac8.mybluemix.net/ui)
 
